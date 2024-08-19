@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startWinLog": "set DEBUG=socket.io* && node index",
+    "start": "node index",
+    "debug": "nodemon index",
+    "debug1": "DEBUG=* nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "2.3.x"
+  }
+}
