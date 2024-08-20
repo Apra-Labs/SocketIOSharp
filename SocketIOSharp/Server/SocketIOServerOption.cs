@@ -31,7 +31,25 @@ namespace SocketIOSharp.Server
         /// <param name="InitialData">An optional packet which will be concatenated to the handshake packet emitted by Engine.IO.</param>
         /// <param name="ServerCertificate">The certificate used to authenticate the server.</param>
         /// <param name="ClientCertificateValidationCallback">Callback used to validate the certificate supplied by the client.</param>
-        public SocketIOServerOption(ushort Port, string Path = "/socket.io", bool Secure = false, ulong PingTimeout = 5000, ulong PingInterval = 25000, ulong UpgradeTimeout = 10000, bool Polling = true, bool WebSocket = true, bool AllowUpgrade = true, bool SetCookie = true, string SIDCookieName = "io", IDictionary<string, string> Cookies = null, Action<HttpListenerRequest, Action<EngineIOException>> AllowHttpRequest = null, Action<WebSocketContext, Action<EngineIOException>> AllowWebSocket = null, object InitialData = null, X509Certificate2 ServerCertificate = null, RemoteCertificateValidationCallback ClientCertificateValidationCallback = null) : base(Port, Path, Secure, PingTimeout, PingInterval, UpgradeTimeout, Polling, WebSocket, AllowUpgrade, SetCookie, SIDCookieName, Cookies, AllowHttpRequest, AllowWebSocket, InitialData, ServerCertificate, ClientCertificateValidationCallback)
+        public SocketIOServerOption(
+            ushort Port, 
+            string Path = "/socket.io", 
+            bool Secure = false, 
+            ulong PingTimeout = 5000, 
+            ulong PingInterval = 25000, 
+            ulong UpgradeTimeout = 10000, 
+            bool Polling = true, 
+            bool WebSocket = true, 
+            bool AllowUpgrade = true, 
+            bool SetCookie = true, 
+            string SIDCookieName = "io", 
+            IDictionary<string, string> Cookies = null, 
+            Action<HttpListenerRequest, Action<EngineIOException>> AllowHttpRequest = null, 
+            Action<WebSocketContext, Action<EngineIOException>> AllowWebSocket = null, 
+            object InitialData = null, 
+            X509Certificate2 ServerCertificate = null, 
+            RemoteCertificateValidationCallback ClientCertificateValidationCallback = null) 
+            : base(Port, Path, Secure, PingTimeout, PingInterval, UpgradeTimeout, Polling, WebSocket, AllowUpgrade, SetCookie, SIDCookieName, Cookies, AllowHttpRequest, AllowWebSocket, InitialData, ServerCertificate, ClientCertificateValidationCallback)
         {
             
         }
